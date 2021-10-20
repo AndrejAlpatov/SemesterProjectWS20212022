@@ -26,3 +26,17 @@ void cStreckenEndPunkt::ausgabe()
 		<< "\nGeografische Laenge: " << laenge
 		<< "\nGeografische Breite: " << breite << endl;
 }
+
+
+/// <summary>
+/// Input Values for Class members
+/// </summary>
+void cStreckenEndPunkt::eingabe()
+{
+	cout << "Geben Sie die Bezeichnung fuer den Streckenendpunkt ein" << endl;
+	cin >> bezeichnung;
+	cout << "Geben Sie geografische Laenge ein" << endl;
+	cin >> laenge;
+	cout << "Geben Sie geografische Breite ein" << endl;
+	cin >> breite;
+}

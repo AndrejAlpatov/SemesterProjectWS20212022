@@ -7,14 +7,7 @@
 
 int main() {
 
-	cStreckenAbschnitt test;
-	cStreckenEndPunkt test_2;
 
-	test.ausgabe();
-
-	test.eingabe();
-	test.ausgabe();
-	test_2.ausgabe();
 
 
 	return 0;
