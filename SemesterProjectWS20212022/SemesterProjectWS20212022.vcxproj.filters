@@ -21,9 +21,15 @@
     <ClCompile Include="cStreckenAbschnitt.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="cStreckenEndPunkt.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cStreckenAbschnitt.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cStreckenEndPunkt.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
