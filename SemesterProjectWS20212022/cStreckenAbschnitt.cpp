@@ -50,8 +50,8 @@ void cStreckenAbschnitt::eingabe()
 	nummer_des_streckenabschnitts = temp >= 0 ? temp : temp * -1;
 	cout << "Ist der Streckenabschnitt elektrifiziert? (JA - 1, NEIN - 0)?\n";
 	cin >> temp;
-	elektrifiziert = temp < 0 ? false : true;
+	elektrifiziert = temp < 1 ? false : true;
 	cout << "Ist der Streckenabschnitt belegt (JA - 1, NEIN - 0)?\n";
 	cin >> temp;
-	belegt = temp < 0 ? false : true;
+	belegt = temp < 1 ? false : true;
 }
