@@ -10,5 +10,9 @@ int main() {
 
 	test.ausgabe();
 
+	test.eingabe();
+	test.ausgabe();
+
+
 	return 0;
 }

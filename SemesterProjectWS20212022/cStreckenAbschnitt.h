@@ -8,5 +8,6 @@ class cStreckenAbschnitt
 public:
 	cStreckenAbschnitt(int nummer_des_streckenabschnitts = 0, bool elektrifiziert = true, bool belegt = false);
 	void ausgabe();
+	void eingabe();
 };
 
