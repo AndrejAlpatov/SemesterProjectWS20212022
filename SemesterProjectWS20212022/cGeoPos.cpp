@@ -1,5 +1,7 @@
 #include "cGeoPos.h"
 #include <cmath>
+#include <iostream>
+using namespace std;
 
 /// <summary>
 /// Correction of the geographic coordinates
@@ -52,4 +54,11 @@ void cGeoPos::setGeoPos(double longitude, double latitude)
 	this->latitude = latitude;
 
 	corrGeoCoordinates();
+}
+
+void cGeoPos::printGeoPos()
+{
+	cout << "Geografische Koordinatenwerte: \n"
+		<< "Longitude: " << longitude
+		<< "\nLatitude: " << latitude << endl;
 }
