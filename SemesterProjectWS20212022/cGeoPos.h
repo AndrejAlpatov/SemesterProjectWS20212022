@@ -1,4 +1,8 @@
 #pragma once
+
+/// <summary>
+/// Manages geographical coordinates longitude and latitude
+/// </summary>
 class cGeoPos
 {
 	double longitude;

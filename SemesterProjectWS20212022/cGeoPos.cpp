@@ -30,8 +30,8 @@ void cGeoPos::corrGeoCoordinates()
 /// <summary>
 /// universal constructor
 /// </summary>
-/// <param name="longitude"></param>
-/// <param name="latitude"></param>
+/// <param name="longitude">geographical coordinate longitude should be in interval -180...180 </param>
+/// <param name="latitude">geographical coordinate latitude should be in interval -90...90 </param>
 cGeoPos::cGeoPos(double longitude, double latitude)
 {
 	this->longitude = longitude;
@@ -46,8 +46,8 @@ cGeoPos::cGeoPos(double longitude, double latitude)
 /// 
 /// + correction of the values
 /// </summary>
-/// <param name="longitude"></param>
-/// <param name="latitude"></param>
+/// <param name="longitude">geographical coordinate longitude should be in interval -180...180</param>
+/// <param name="latitude">geographical coordinate latitude should be in interval -90...90</param>
 void cGeoPos::setGeoPos(double longitude, double latitude)
 {
 	this->longitude = longitude;
@@ -56,6 +56,9 @@ void cGeoPos::setGeoPos(double longitude, double latitude)
 	corrGeoCoordinates();
 }
 
+/// <summary>
+/// outputs in console the values of longitude & latitude
+/// </summary>
 void cGeoPos::printGeoPos()
 {
 	cout << "Geografische Koordinatenwerte: \n"

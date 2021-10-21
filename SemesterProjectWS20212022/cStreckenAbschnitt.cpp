@@ -8,9 +8,9 @@ using namespace std;
 /// Universal constructor
 /// 
 /// </summary>
-/// <param name="nummer_des_streckenabschnitts"></param>
-/// <param name="elektrifiziert"></param>
-/// <param name="belegt"></param>
+/// <param name="nummer_des_streckenabschnitts">The index of route section</param>
+/// <param name="elektrifiziert">The section is electrified True / False </param>
+/// <param name="belegt">The section is occupied True/ False</param>
 cStreckenAbschnitt::cStreckenAbschnitt(int nummer_des_streckenabschnitts, bool elektrifiziert, bool belegt)
 {
 	this->nummer_des_streckenabschnitts = nummer_des_streckenabschnitts;
@@ -22,9 +22,7 @@ cStreckenAbschnitt::cStreckenAbschnitt(int nummer_des_streckenabschnitts, bool e
 /// <summary>
 /// Output of the route section values
 /// 
-/// Number of section
-/// Electrified
-/// Occupied
+/// (Index of the section, Electrified Yes/No, Occupied Yes/No)
 /// </summary>
 void cStreckenAbschnitt::ausgabe()
 {

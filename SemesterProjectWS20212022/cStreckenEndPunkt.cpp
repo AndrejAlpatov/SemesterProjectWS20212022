@@ -5,9 +5,9 @@ using namespace std;
 /// <summary>
 /// universal constructor
 /// </summary>
-/// <param name="bezeichnung"></param>
-/// <param name="laenge"></param>
-/// <param name="breite"></param>
+/// <param name="bezeichnung">The name of section end point</param>
+/// <param name="laenge">geographical coordinate longitude</param>
+/// <param name="breite">geographical coordinate latitude</param>
 cStreckenEndPunkt::cStreckenEndPunkt(string bezeichnung, double laenge, double breite): coordinates(laenge, breite)
 {
 	this->bezeichnung = bezeichnung;
