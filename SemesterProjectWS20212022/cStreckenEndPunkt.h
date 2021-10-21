@@ -3,6 +3,9 @@
 #include <string>
 using namespace std;
 
+/// <summary>
+/// class cStreckenEndPunkt manages geographic positions of railway stations
+/// </summary>
 class cStreckenEndPunkt
 {
 	string bezeichnung;

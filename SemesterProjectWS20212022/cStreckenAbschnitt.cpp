@@ -29,7 +29,7 @@ cStreckenAbschnitt::cStreckenAbschnitt(int nummer_des_streckenabschnitts, bool e
 void cStreckenAbschnitt::ausgabe()
 {
 	string electrifiziert_string, belegt_string;
-	electrifiziert_string = elektrifiziert ? "Ja" : "Nein";
+	electrifiziert_string = elektrifiziert ? "Ja" : "Nein"; //change not readable values of variables to user friendly
 	belegt_string = belegt ? "Ja" : "Nein";
 
 
@@ -47,11 +47,11 @@ void cStreckenAbschnitt::eingabe()
 
 	cout << "Geben Sie die Nummer des Streckenabschnitts ein (muss ganze Zahl sein)\n";
 	cin >> temp;
-	nummer_des_streckenabschnitts = temp >= 0 ? temp : temp * -1;
+	nummer_des_streckenabschnitts = temp >= 0 ? temp : temp * -1; //if the input has a negative value, then change to positive
 	cout << "Ist der Streckenabschnitt elektrifiziert? (JA - 1, NEIN - 0)?\n";
 	cin >> temp;
-	elektrifiziert = temp < 1 ? false : true;
+	elektrifiziert = temp < 1 ? false : true; //Processing of possibly incorrectly entered values
 	cout << "Ist der Streckenabschnitt belegt (JA - 1, NEIN - 0)?\n";
 	cin >> temp;
-	belegt = temp < 1 ? false : true;
+	belegt = temp < 1 ? false : true; //Processing of possibly incorrectly entered values
 }

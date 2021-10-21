@@ -1,4 +1,8 @@
 #pragma once
+
+/// <summary>
+/// Class cStreckenAbschnitt is for managing route sections
+/// </summary>
 class cStreckenAbschnitt
 {
 	int nummer_des_streckenabschnitts;
