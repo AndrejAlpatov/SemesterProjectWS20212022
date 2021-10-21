@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "cGeoPos.h"
 using namespace std;
 
 /// <summary>
@@ -9,8 +10,7 @@ using namespace std;
 class cStreckenEndPunkt
 {
 	string bezeichnung;
-	double laenge;
-	double breite;
+	cGeoPos coordinates;
 
 public:
 	cStreckenEndPunkt(string bezeichnung = "Haltepunkt", double laenge = 0.0, double breite = 0.0);

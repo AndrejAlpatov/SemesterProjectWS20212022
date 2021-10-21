@@ -8,11 +8,9 @@ using namespace std;
 /// <param name="bezeichnung"></param>
 /// <param name="laenge"></param>
 /// <param name="breite"></param>
-cStreckenEndPunkt::cStreckenEndPunkt(string bezeichnung, double laenge, double breite)
+cStreckenEndPunkt::cStreckenEndPunkt(string bezeichnung, double laenge, double breite): coordinates(laenge, breite)
 {
 	this->bezeichnung = bezeichnung;
-	this->laenge = laenge;
-	this->breite = breite;
 }
 
 
@@ -22,9 +20,9 @@ cStreckenEndPunkt::cStreckenEndPunkt(string bezeichnung, double laenge, double b
 void cStreckenEndPunkt::ausgabe()
 {
 	cout << "StreckenendPunkt\n"
-		<< "Bezeichnung: " << bezeichnung
-		<< "\nGeografische Laenge: " << laenge
-		<< "\nGeografische Breite: " << breite << endl;
+		<< "Bezeichnung: " << bezeichnung << endl;
+
+	coordinates.printGeoPos();
 }
 
 
@@ -33,10 +31,15 @@ void cStreckenEndPunkt::ausgabe()
 /// </summary>
 void cStreckenEndPunkt::eingabe()
 {
+	double laenge;
+	double breite;
+
 	cout << "Geben Sie die Bezeichnung fuer den Streckenendpunkt ein" << endl;
 	cin >> bezeichnung;
 	cout << "Geben Sie geografische Laenge ein" << endl;
 	cin >> laenge;
 	cout << "Geben Sie geografische Breite ein" << endl;
 	cin >> breite;
+
+	coordinates.setGeoPos(laenge, breite);
 }
