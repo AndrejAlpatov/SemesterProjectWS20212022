@@ -11,7 +11,7 @@ double cDieselLok::tanken()
 
 
 /// <summary>
-/// provision of the locomotive
+/// 
 /// </summary>
 /// <param name="stunden"></param>
 /// <returns></returns>
