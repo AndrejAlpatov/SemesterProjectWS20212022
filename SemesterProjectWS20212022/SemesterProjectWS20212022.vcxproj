@@ -140,12 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cGeoPos.cpp" />
+    <ClCompile Include="cLokomotive.cpp" />
+    <ClCompile Include="cSchienenFahrzeug.cpp" />
     <ClCompile Include="cStreckenAbschnitt.cpp" />
     <ClCompile Include="cStreckenEndPunkt.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cGeoPos.h" />
+    <ClInclude Include="cLokomotive.h" />
+    <ClInclude Include="cSchienenFahrzeug.h" />
     <ClInclude Include="cStreckenAbschnitt.h" />
     <ClInclude Include="cStreckenEndPunkt.h" />
   </ItemGroup>

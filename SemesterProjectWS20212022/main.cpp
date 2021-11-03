@@ -23,6 +23,7 @@ int main() {
 
 	cStreckenAbschnitt obj(56.58, 36.8, "first", 14.78, 5589.4, "second", 333, 1, 0);
 	obj.ausgabe();
+	cout << "Streckenlaenge: " << obj.getStreckenlaenge() << endl;
 
 	return 0;
 }

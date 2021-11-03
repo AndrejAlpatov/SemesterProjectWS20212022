@@ -9,6 +9,7 @@ class cStreckenAbschnitt
 	int nummer_des_streckenabschnitts;
 	bool elektrifiziert;
 	bool belegt;
+	double Streckenlaenge;
 	cStreckenEndPunkt end_punkt[2];
 
 
@@ -22,5 +23,7 @@ public:
 
 	void ausgabe();
 	void eingabe();
+	void berechneLaenge();
+	double getStreckenlaenge();
 };
 
