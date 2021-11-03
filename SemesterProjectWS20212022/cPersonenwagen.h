@@ -1,5 +1,9 @@
 #pragma once
 #include "cWaggon.h"
+
+/// <summary>
+/// Coach
+/// </summary>
 class cPersonenwagen :
     public cWaggon
 {

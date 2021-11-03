@@ -1,5 +1,9 @@
 #pragma once
 #include "cSchienenFahrzeug.h"
+
+/// <summary>
+/// Base class for locomotive
+/// </summary>
 class cLokomotive :
     public cSchienenFahrzeug
 {

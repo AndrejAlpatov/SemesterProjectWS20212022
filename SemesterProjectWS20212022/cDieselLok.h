@@ -1,5 +1,9 @@
 #pragma once
 #include "cLokomotive.h"
+
+/// <summary>
+/// Diesel locomotive
+/// </summary>
 class cDieselLok :
     public cLokomotive
 {

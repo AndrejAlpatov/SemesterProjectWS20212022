@@ -1,4 +1,8 @@
 #pragma once
+
+/// <summary>
+/// Rail vehicle. Base class for inheritance
+/// </summary>
 class cSchienenFahrzeug
 {
 	double gewicht;
