@@ -33,6 +33,21 @@
     <ClCompile Include="cLokomotive.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="cWaggon.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cDieselLok.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cElektroLok.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cPersonenwagen.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cGueterwagen.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cStreckenAbschnitt.h">
@@ -48,6 +63,21 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="cLokomotive.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cWaggon.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cDieselLok.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cElektroLok.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cPersonenwagen.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cGueterwagen.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
