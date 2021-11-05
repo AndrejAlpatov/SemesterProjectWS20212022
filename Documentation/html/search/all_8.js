@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['linked_5fptr_0',['linked_ptr',['../classtesting_1_1internal_1_1linked__ptr.html',1,'testing::internal']]],
-  ['linked_5fptr_5finternal_1',['linked_ptr_internal',['../classtesting_1_1internal_1_1linked__ptr__internal.html',1,'testing::internal']]]
+  ['setgeopos_0',['setGeoPos',['../classc_geo_pos.html#aec1f7a19eeae8db1e811ab948f078186',1,'cGeoPos']]]
 ];

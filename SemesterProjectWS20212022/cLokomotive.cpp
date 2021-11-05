@@ -29,5 +29,5 @@ void cLokomotive::ankuppeln()
 /// <returns></returns>
 double cLokomotive::bereitstellen(int stunden)
 {
-	return get_gewicht() + (stunden * triebkraft);
+	return cSchienenFahrzeug::get_gewicht() + (stunden * triebkraft);
 }
