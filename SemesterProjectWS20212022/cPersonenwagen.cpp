@@ -5,8 +5,8 @@ using namespace std;
 /// <summary>
 /// Standard constructor
 /// </summary>
-/// <param name="fahrgastZahl"></param>
-/// <param name="gewicht"></param>
+/// <param name="fahrgastZahl">The number of passengers</param>
+/// <param name="gewicht">The weight of the couch</param>
 cPersonenwagen::cPersonenwagen(int fahrgastZahl, double gewicht):cWaggon(gewicht)
 {
 	this->fahrgastZahl = fahrgastZahl;
@@ -40,6 +40,19 @@ int cPersonenwagen::aussteigen(int raus)
 
 
 /// <summary>
+/// If Parameter "Final Destination" is True outputs expression in console and set the number of passengers to 0
+/// </summary>
+/// <param name="endstation">If True -> final destination, else False</param>
+void cPersonenwagen::aussteigen(bool endstation)
+{
+	if (endstation) {
+		cout << "Endstation, bitte alle aussteigen" << std::endl;
+		fahrgastZahl = 0;
+	}
+}
+
+
+/// <summary>
 /// returns the number of passengers
 /// </summary>
 /// <returns></returns>
@@ -50,7 +63,7 @@ int cPersonenwagen::get_fahrgastZahl()
 
 
 /// <summary>
-/// output in the console "Personenwagen: Heizschlauch verbinden Personenwagen: Steuerleitungen verbinden Zieh mich!"
+/// outputs in the console "Personenwagen: Heizschlauch verbinden Personenwagen: Steuerleitungen verbinden Zieh mich!"
 /// 
 /// overrides the member function in the class cWagon
 /// </summary>

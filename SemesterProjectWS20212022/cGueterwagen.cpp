@@ -38,6 +38,17 @@ double cGueterwagen::abladen(double lastweg)
 
 
 /// <summary>
+/// If Parameter "Leerung" is True outputs expression in the console and set the "nutzlast" to 0
+/// </summary>
+/// <param name="leerung">True If the carriage must be unloaded, else False</param>
+void cGueterwagen::abladen(bool leerung)
+{
+	cout << "Leerung Nutzlast vollstaendig" << endl;
+	nutzlast = 0;
+}
+
+
+/// <summary>
 /// returns the sum of weight and payload of freight wagon
 /// </summary>
 /// <returns>sum of weight and payload of freight wagon</returns>
