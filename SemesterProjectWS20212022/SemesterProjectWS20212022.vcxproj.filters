@@ -54,6 +54,9 @@
     <ClCompile Include="cBahnhof.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="cEndBahnhof.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cStreckenAbschnitt.h">
@@ -90,6 +93,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="cBahnhof.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cEndBahnhof.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
