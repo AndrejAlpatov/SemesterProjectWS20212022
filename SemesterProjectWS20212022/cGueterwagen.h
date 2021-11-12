@@ -14,5 +14,6 @@ public:
     double zuladen(double lastplus);
     double abladen(double lastweg);
     double get_gewicht();
+    void ankuppeln() override;
 };
 

@@ -1,4 +1,6 @@
 #include "cGueterwagen.h"
+#include <iostream>
+using namespace std;
 
 /// <summary>
 /// standard constructor
@@ -42,4 +44,15 @@ double cGueterwagen::abladen(double lastweg)
 double cGueterwagen::get_gewicht()
 {
 	return cWaggon::get_gewicht() + nutzlast;
+}
+
+
+/// <summary>
+/// Output in console ""Gueterwagen: Bremswirkung an Nutzlast anpassen Zieh mich!""
+/// 
+/// overrides the member function in the class cWagon
+/// </summary>
+void cGueterwagen::ankuppeln()
+{
+	cout << "Gueterwagen: Bremswirkung an Nutzlast anpassen\nZieh mich!" << endl;
 }

@@ -14,5 +14,6 @@ public:
     int einsteigen(int rein);
     int aussteigen(int raus);
     int get_fahrgastZahl();
+    void ankuppeln()override;
 };
 

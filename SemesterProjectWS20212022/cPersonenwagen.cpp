@@ -1,4 +1,6 @@
 #include "cPersonenwagen.h"
+#include <iostream>
+using namespace std;
 
 /// <summary>
 /// Standard constructor
@@ -44,4 +46,15 @@ int cPersonenwagen::aussteigen(int raus)
 int cPersonenwagen::get_fahrgastZahl()
 {
 	return fahrgastZahl;
+}
+
+
+/// <summary>
+/// output in the console "Personenwagen: Heizschlauch verbinden Personenwagen: Steuerleitungen verbinden Zieh mich!"
+/// 
+/// overrides the member function in the class cWagon
+/// </summary>
+void cPersonenwagen::ankuppeln()
+{
+	cout << "Personenwagen: Heizschlauch verbinden\nPersonenwagen: Steuerleitungen verbinden\nZieh mich!" << endl;
 }

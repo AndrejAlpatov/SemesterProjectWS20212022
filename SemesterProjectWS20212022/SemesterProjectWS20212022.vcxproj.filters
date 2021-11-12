@@ -48,6 +48,9 @@
     <ClCompile Include="cGueterwagen.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="cBetriebshof.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cStreckenAbschnitt.h">
@@ -78,6 +81,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="cGueterwagen.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cBetriebshof.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

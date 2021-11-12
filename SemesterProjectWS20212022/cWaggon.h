@@ -9,6 +9,6 @@ class cWaggon :
 {
 public:
     cWaggon(double gewicht = 50000.0);
-    void ankuppeln();
+    virtual void ankuppeln();
 };
 

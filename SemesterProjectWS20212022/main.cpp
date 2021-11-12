@@ -8,6 +8,7 @@
 #include "cGueterwagen.h"
 #include "cDieselLok.h"
 #include "cElektroLok.h"
+#include "cBetriebshof.h"
 
 #define ARRAY_SIZE 2
 #define NUMBER_OF_ELEMENTS_FOR_INPUT 2 //Must be <= ARRAY_SIZE
@@ -33,6 +34,7 @@ int main() {
 	cPersonenwagen pullman;
 	cDieselLok v200;
 	cElektroLok e03;
+
 
 	// Mit den Objekten arbeiten:
 	cout << "Startgewicht des Gueterwagens: " << packdrauf.get_gewicht() << endl;
