@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cBahnhof.cpp" />
     <ClCompile Include="cBetriebshof.cpp" />
     <ClCompile Include="cDieselLok.cpp" />
     <ClCompile Include="cElektroLok.cpp" />
@@ -153,6 +154,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cBahnhof.h" />
     <ClInclude Include="cBetriebshof.h" />
     <ClInclude Include="cDieselLok.h" />
     <ClInclude Include="cElektroLok.h" />
