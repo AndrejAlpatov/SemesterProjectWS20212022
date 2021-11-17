@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project<span id="projectnumber">&#160;3</span>
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classc_lokomotive-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">cLokomotive Class Reference</div></div>
 </div><!--header-->
@@ -90,8 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b29296aa59804333f828a221b37c2ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_lokomotive.html#a7b29296aa59804333f828a221b37c2ad">cLokomotive</a> (double triebkraft=6500.0, double gewicht=50000.0)</td></tr>
 <tr class="memdesc:a7b29296aa59804333f828a221b37c2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard constructor  <a href="classc_lokomotive.html#a7b29296aa59804333f828a221b37c2ad">More...</a><br /></td></tr>
 <tr class="separator:a7b29296aa59804333f828a221b37c2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35059b762416baad2f125560ce984ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_lokomotive.html#a35059b762416baad2f125560ce984ce0">ankuppeln</a> ()</td></tr>
-<tr class="memdesc:a35059b762416baad2f125560ce984ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs in console "Ich ziehe alle!"  <a href="classc_lokomotive.html#a35059b762416baad2f125560ce984ce0">More...</a><br /></td></tr>
+<tr class="memitem:a35059b762416baad2f125560ce984ce0"><td class="memItemLeft" align="right" valign="top"><a id="a35059b762416baad2f125560ce984ce0" name="a35059b762416baad2f125560ce984ce0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ankuppeln</b> ()</td></tr>
+<tr class="memdesc:a35059b762416baad2f125560ce984ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs in console "Ich ziehe alle!" <br /></td></tr>
 <tr class="separator:a35059b762416baad2f125560ce984ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e3e74e83f1b0b059c83a271956af66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_lokomotive.html#a23e3e74e83f1b0b059c83a271956af66">bereitstellen</a> (int stunden)</td></tr>
 <tr class="memdesc:a23e3e74e83f1b0b059c83a271956af66"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns weight + (hours * driving force)  <a href="classc_lokomotive.html#a23e3e74e83f1b0b059c83a271956af66">More...</a><br /></td></tr>
@@ -103,6 +105,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3494c429faad4df79c3cf09f6e48f5e inherit pub_methods_classc_schienen_fahrzeug"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_schienen_fahrzeug.html#ad3494c429faad4df79c3cf09f6e48f5e">get_gewicht</a> ()</td></tr>
 <tr class="memdesc:ad3494c429faad4df79c3cf09f6e48f5e inherit pub_methods_classc_schienen_fahrzeug"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the value of Variable "gewicht"  <a href="classc_schienen_fahrzeug.html#ad3494c429faad4df79c3cf09f6e48f5e">More...</a><br /></td></tr>
 <tr class="separator:ad3494c429faad4df79c3cf09f6e48f5e inherit pub_methods_classc_schienen_fahrzeug"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6b8b23951797d9dcfc6a433f28a151bf"><td class="memItemLeft" align="right" valign="top"><a id="a6b8b23951797d9dcfc6a433f28a151bf" name="a6b8b23951797d9dcfc6a433f28a151bf"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>triebkraft</b></td></tr>
+<tr class="separator:a6b8b23951797d9dcfc6a433f28a151bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base class for locomotive </p>
@@ -145,25 +153,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a35059b762416baad2f125560ce984ce0" name="a35059b762416baad2f125560ce984ce0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35059b762416baad2f125560ce984ce0">&#9670;&nbsp;</a></span>ankuppeln()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cLokomotive::ankuppeln </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Outputs in console "Ich ziehe alle!" </p>
-
-</div>
-</div>
 <a id="a23e3e74e83f1b0b059c83a271956af66" name="a23e3e74e83f1b0b059c83a271956af66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23e3e74e83f1b0b059c83a271956af66">&#9670;&nbsp;</a></span>bereitstellen()</h2>
 
@@ -193,7 +182,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/SemesterProjectWS20212022/<a class="el" href="c_lokomotive_8h_source.html">cLokomotive.h</a></li>
-<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/SemesterProjectWS20212022/<a class="el" href="c_lokomotive_8cpp.html">cLokomotive.cpp</a></li>
+<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/SemesterProjectWS20212022/cLokomotive.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

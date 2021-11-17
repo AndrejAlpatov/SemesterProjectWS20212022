@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SemesterProjectWS20212022: testing::internal::NativeArray&lt; Element &gt; Class Template Reference</title>
+<title>My Project: testing::internal::NativeArray&lt; Element &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SemesterProjectWS20212022
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,9 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classtesting_1_1internal_1_1_native_array-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">testing::internal::NativeArray&lt; Element &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -109,7 +112,40 @@ const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () 
 <tr class="memitem:a81b90f5739ed812610e68dc34c9e3850"><td class="memItemLeft" align="right" valign="top"><a id="a81b90f5739ed812610e68dc34c9e3850" name="a81b90f5739ed812610e68dc34c9e3850"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classtesting_1_1internal_1_1_native_array.html">NativeArray</a> &amp;rhs) const</td></tr>
 <tr class="separator:a81b90f5739ed812610e68dc34c9e3850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:abe36a7e1b487dc6b9bd81489b1c2af28"><td class="memItemLeft" align="right" valign="top"><a id="abe36a7e1b487dc6b9bd81489b1c2af28" name="abe36a7e1b487dc6b9bd81489b1c2af28"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>kCheckTypeIsNotConstOrAReference</b>
+ }</td></tr>
+<tr class="separator:abe36a7e1b487dc6b9bd81489b1c2af28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8c0069cc09f559785fe4923fc118056f"><td class="memItemLeft" align="right" valign="top"><a id="a8c0069cc09f559785fe4923fc118056f" name="a8c0069cc09f559785fe4923fc118056f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitCopy</b> (const Element *array, size_t a_size)</td></tr>
+<tr class="separator:a8c0069cc09f559785fe4923fc118056f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ad6d79e17e2c98a9d4d684afcb7f79"><td class="memItemLeft" align="right" valign="top"><a id="ac6ad6d79e17e2c98a9d4d684afcb7f79" name="ac6ad6d79e17e2c98a9d4d684afcb7f79"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitRef</b> (const Element *array, size_t a_size)</td></tr>
+<tr class="separator:ac6ad6d79e17e2c98a9d4d684afcb7f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6633f3eab6947d4502fb1c69f95be66e"><td class="memItemLeft" align="right" valign="top"><a id="a6633f3eab6947d4502fb1c69f95be66e" name="a6633f3eab6947d4502fb1c69f95be66e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GTEST_DISALLOW_ASSIGN_</b> (<a class="el" href="classtesting_1_1internal_1_1_native_array.html">NativeArray</a>)</td></tr>
+<tr class="separator:a6633f3eab6947d4502fb1c69f95be66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:adadc025fbbbd43904d4036991019f18f"><td class="memItemLeft" align="right" valign="top"><a id="adadc025fbbbd43904d4036991019f18f" name="adadc025fbbbd43904d4036991019f18f"></a>
+const Element *&#160;</td><td class="memItemRight" valign="bottom"><b>array_</b></td></tr>
+<tr class="separator:adadc025fbbbd43904d4036991019f18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e4251de39aaa75f697f0eaeedbf06e"><td class="memItemLeft" align="right" valign="top"><a id="aa7e4251de39aaa75f697f0eaeedbf06e" name="aa7e4251de39aaa75f697f0eaeedbf06e"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_</b></td></tr>
+<tr class="separator:aa7e4251de39aaa75f697f0eaeedbf06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd7442a10398a60215a9989bcbd8078"><td class="memItemLeft" align="right" valign="top"><a id="addd7442a10398a60215a9989bcbd8078" name="addd7442a10398a60215a9989bcbd8078"></a>
+void(NativeArray::*&#160;</td><td class="memItemRight" valign="bottom"><b>clone_</b> )(const Element *, size_t)</td></tr>
+<tr class="separator:addd7442a10398a60215a9989bcbd8078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.4/build/native/include/gtest/internal/<a class="el" href="gtest-internal_8h_source.html">gtest-internal.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

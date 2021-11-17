@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project<span id="projectnumber">&#160;3</span>
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -69,24 +69,24 @@ $(function() {
   <div class="headertitle"><div class="title">cElektroLok.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="c_elektro_lok_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="c_lokomotive_8h.html">cLokomotive.h</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;cLokomotive.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classc_elektro_lok.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="classc_elektro_lok.html">cElektroLok</a> :</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">public</span> <a class="code hl_class" href="classc_lokomotive.html">cLokomotive</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">bool</span> stromAn;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> aufbuegeln();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classc_elektro_lok.html#a2c55c74e5576f08a2360f33cf93aa12b">aufbuegeln</a>();</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classc_elektro_lok.html#a148e9564f702db2fd75324490388d0f3">bereitstellen</a>(<span class="keywordtype">int</span> stunden);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_function" href="classc_elektro_lok.html#ade947ca28a714d55acd15202b6636263">cElektroLok</a>(<span class="keywordtype">bool</span> stromAn = <span class="keyword">false</span>, <span class="keywordtype">double</span> triebkraft = 6500.0, <span class="keywordtype">double</span> gewicht = 50000.0);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="ttc" id="ac_lokomotive_8h_html"><div class="ttname"><a href="c_lokomotive_8h.html">cLokomotive.h</a></div></div>
 <div class="ttc" id="aclassc_elektro_lok_html"><div class="ttname"><a href="classc_elektro_lok.html">cElektroLok</a></div><div class="ttdoc">Electric locomotive</div><div class="ttdef"><b>Definition:</b> cElektroLok.h:9</div></div>
 <div class="ttc" id="aclassc_elektro_lok_html_a148e9564f702db2fd75324490388d0f3"><div class="ttname"><a href="classc_elektro_lok.html#a148e9564f702db2fd75324490388d0f3">cElektroLok::bereitstellen</a></div><div class="ttdeci">double bereitstellen(int stunden)</div><div class="ttdef"><b>Definition:</b> cElektroLok.cpp:17</div></div>
+<div class="ttc" id="aclassc_elektro_lok_html_a2c55c74e5576f08a2360f33cf93aa12b"><div class="ttname"><a href="classc_elektro_lok.html#a2c55c74e5576f08a2360f33cf93aa12b">cElektroLok::aufbuegeln</a></div><div class="ttdeci">void aufbuegeln()</div><div class="ttdoc">sets the StromAn attribute to true</div><div class="ttdef"><b>Definition:</b> cElektroLok.cpp:6</div></div>
 <div class="ttc" id="aclassc_elektro_lok_html_ade947ca28a714d55acd15202b6636263"><div class="ttname"><a href="classc_elektro_lok.html#ade947ca28a714d55acd15202b6636263">cElektroLok::cElektroLok</a></div><div class="ttdeci">cElektroLok(bool stromAn=false, double triebkraft=6500.0, double gewicht=50000.0)</div><div class="ttdoc">Standard constructor</div><div class="ttdef"><b>Definition:</b> cElektroLok.cpp:33</div></div>
 <div class="ttc" id="aclassc_lokomotive_html"><div class="ttname"><a href="classc_lokomotive.html">cLokomotive</a></div><div class="ttdoc">Base class for locomotive</div><div class="ttdef"><b>Definition:</b> cLokomotive.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->

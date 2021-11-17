@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project<span id="projectnumber">&#160;3</span>
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -69,8 +69,8 @@ $(function() {
   <div class="headertitle"><div class="title">cPersonenwagen.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="c_personenwagen_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="c_waggon_8h.html">cWaggon.h</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;cWaggon.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classc_personenwagen.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="classc_personenwagen.html">cPersonenwagen</a> :</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">public</span> <a class="code hl_class" href="classc_waggon.html">cWaggon</a></div>
@@ -81,15 +81,18 @@ $(function() {
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="classc_personenwagen.html#a75f7243265227f08ebf48bc15a145e06">cPersonenwagen</a>(<span class="keywordtype">int</span> fahrgastZahl = 0, <span class="keywordtype">double</span> gewicht = 50000.0);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classc_personenwagen.html#afd66e45b51dc3e75d61ccd374a9aa576">einsteigen</a>(<span class="keywordtype">int</span> rein);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classc_personenwagen.html#acd0939626cae0acc325c08f700cfb1f2">aussteigen</a>(<span class="keywordtype">int</span> raus);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classc_personenwagen.html#a6ba909e3746d4d24d290e66822637a0e">get_fahrgastZahl</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="ttc" id="ac_waggon_8h_html"><div class="ttname"><a href="c_waggon_8h.html">cWaggon.h</a></div></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classc_personenwagen.html#acd0939626cae0acc325c08f700cfb1f2">aussteigen</a>(<span class="keywordtype">bool</span> endstation);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classc_personenwagen.html#a6ba909e3746d4d24d290e66822637a0e">get_fahrgastZahl</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classc_personenwagen.html#ad38f243f9d83047b6a74866dc4d8a865">ankuppeln</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="ttc" id="aclassc_personenwagen_html"><div class="ttname"><a href="classc_personenwagen.html">cPersonenwagen</a></div><div class="ttdoc">Coach</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.h:9</div></div>
-<div class="ttc" id="aclassc_personenwagen_html_a6ba909e3746d4d24d290e66822637a0e"><div class="ttname"><a href="classc_personenwagen.html#a6ba909e3746d4d24d290e66822637a0e">cPersonenwagen::get_fahrgastZahl</a></div><div class="ttdeci">int get_fahrgastZahl()</div><div class="ttdoc">returns the number of passengers</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:44</div></div>
-<div class="ttc" id="aclassc_personenwagen_html_a75f7243265227f08ebf48bc15a145e06"><div class="ttname"><a href="classc_personenwagen.html#a75f7243265227f08ebf48bc15a145e06">cPersonenwagen::cPersonenwagen</a></div><div class="ttdeci">cPersonenwagen(int fahrgastZahl=0, double gewicht=50000.0)</div><div class="ttdoc">Standard constructor</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:8</div></div>
-<div class="ttc" id="aclassc_personenwagen_html_acd0939626cae0acc325c08f700cfb1f2"><div class="ttname"><a href="classc_personenwagen.html#acd0939626cae0acc325c08f700cfb1f2">cPersonenwagen::aussteigen</a></div><div class="ttdeci">int aussteigen(int raus)</div><div class="ttdoc">Reducing the number of passengers by the number of passengers who left</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:32</div></div>
-<div class="ttc" id="aclassc_personenwagen_html_afd66e45b51dc3e75d61ccd374a9aa576"><div class="ttname"><a href="classc_personenwagen.html#afd66e45b51dc3e75d61ccd374a9aa576">cPersonenwagen::einsteigen</a></div><div class="ttdeci">int einsteigen(int rein)</div><div class="ttdoc">Increase in the number of passengers by the number of passengers entered</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:19</div></div>
+<div class="ttc" id="aclassc_personenwagen_html_a6ba909e3746d4d24d290e66822637a0e"><div class="ttname"><a href="classc_personenwagen.html#a6ba909e3746d4d24d290e66822637a0e">cPersonenwagen::get_fahrgastZahl</a></div><div class="ttdeci">int get_fahrgastZahl()</div><div class="ttdoc">returns the number of passengers</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:59</div></div>
+<div class="ttc" id="aclassc_personenwagen_html_a75f7243265227f08ebf48bc15a145e06"><div class="ttname"><a href="classc_personenwagen.html#a75f7243265227f08ebf48bc15a145e06">cPersonenwagen::cPersonenwagen</a></div><div class="ttdeci">cPersonenwagen(int fahrgastZahl=0, double gewicht=50000.0)</div><div class="ttdoc">Standard constructor</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:10</div></div>
+<div class="ttc" id="aclassc_personenwagen_html_acd0939626cae0acc325c08f700cfb1f2"><div class="ttname"><a href="classc_personenwagen.html#acd0939626cae0acc325c08f700cfb1f2">cPersonenwagen::aussteigen</a></div><div class="ttdeci">int aussteigen(int raus)</div><div class="ttdoc">Reducing the number of passengers by the number of passengers who left</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:34</div></div>
+<div class="ttc" id="aclassc_personenwagen_html_ad38f243f9d83047b6a74866dc4d8a865"><div class="ttname"><a href="classc_personenwagen.html#ad38f243f9d83047b6a74866dc4d8a865">cPersonenwagen::ankuppeln</a></div><div class="ttdeci">void ankuppeln() override</div><div class="ttdoc">outputs in the console &quot;Personenwagen: Heizschlauch verbinden Personenwagen: Steuerleitungen verbinde...</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:70</div></div>
+<div class="ttc" id="aclassc_personenwagen_html_afd66e45b51dc3e75d61ccd374a9aa576"><div class="ttname"><a href="classc_personenwagen.html#afd66e45b51dc3e75d61ccd374a9aa576">cPersonenwagen::einsteigen</a></div><div class="ttdeci">int einsteigen(int rein)</div><div class="ttdoc">Increase in the number of passengers by the number of passengers entered</div><div class="ttdef"><b>Definition:</b> cPersonenwagen.cpp:21</div></div>
 <div class="ttc" id="aclassc_waggon_html"><div class="ttname"><a href="classc_waggon.html">cWaggon</a></div><div class="ttdoc">Base class for wagons</div><div class="ttdef"><b>Definition:</b> cWaggon.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

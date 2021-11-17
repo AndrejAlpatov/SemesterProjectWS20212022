@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setgeopos_0',['setGeoPos',['../classc_geo_pos.html#aec1f7a19eeae8db1e811ab948f078186',1,'cGeoPos']]]
+  ['tanken_0',['tanken',['../classc_diesel_lok.html#a0007432fe4f2c2edc18834cab4681047',1,'cDieselLok']]]
 ];

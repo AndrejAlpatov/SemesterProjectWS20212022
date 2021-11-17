@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project<span id="projectnumber">&#160;3</span>
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -69,8 +69,8 @@ $(function() {
   <div class="headertitle"><div class="title">cGueterwagen.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="c_gueterwagen_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="c_waggon_8h.html">cWaggon.h</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;cWaggon.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classc_gueterwagen.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="classc_gueterwagen.html">cGueterwagen</a> :</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">public</span> <a class="code hl_class" href="classc_waggon.html">cWaggon</a></div>
@@ -81,15 +81,17 @@ $(function() {
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="classc_gueterwagen.html#aa7a98c2985f5b9540dfa725c5554851a">cGueterwagen</a>(<span class="keywordtype">double</span> nutzlast = 0.0, <span class="keywordtype">double</span> gewicht = 50000.0);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classc_gueterwagen.html#af37d49ad3e826e1b6c4d27f346e39d21">zuladen</a>(<span class="keywordtype">double</span> lastplus);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classc_gueterwagen.html#ac947ab9692f7812959e5ff6d42ea3466">abladen</a>(<span class="keywordtype">double</span> lastweg);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classc_gueterwagen.html#afdfcf012f777a5e40e6f897703f0dd48">get_gewicht</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="ttc" id="ac_waggon_8h_html"><div class="ttname"><a href="c_waggon_8h.html">cWaggon.h</a></div></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classc_gueterwagen.html#ac947ab9692f7812959e5ff6d42ea3466">abladen</a>(<span class="keywordtype">bool</span> leerung);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classc_gueterwagen.html#afdfcf012f777a5e40e6f897703f0dd48">get_gewicht</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classc_gueterwagen.html#a6ee70d8c906a4de3b721a0643a134b68">ankuppeln</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="ttc" id="aclassc_gueterwagen_html"><div class="ttname"><a href="classc_gueterwagen.html">cGueterwagen</a></div><div class="ttdoc">Freight rail car</div><div class="ttdef"><b>Definition:</b> cGueterwagen.h:9</div></div>
-<div class="ttc" id="aclassc_gueterwagen_html_aa7a98c2985f5b9540dfa725c5554851a"><div class="ttname"><a href="classc_gueterwagen.html#aa7a98c2985f5b9540dfa725c5554851a">cGueterwagen::cGueterwagen</a></div><div class="ttdeci">cGueterwagen(double nutzlast=0.0, double gewicht=50000.0)</div><div class="ttdoc">standard constructor</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:8</div></div>
-<div class="ttc" id="aclassc_gueterwagen_html_ac947ab9692f7812959e5ff6d42ea3466"><div class="ttname"><a href="classc_gueterwagen.html#ac947ab9692f7812959e5ff6d42ea3466">cGueterwagen::abladen</a></div><div class="ttdeci">double abladen(double lastweg)</div><div class="ttdoc">Subtracts the weight of the load from the available one and returns the new value</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:31</div></div>
-<div class="ttc" id="aclassc_gueterwagen_html_af37d49ad3e826e1b6c4d27f346e39d21"><div class="ttname"><a href="classc_gueterwagen.html#af37d49ad3e826e1b6c4d27f346e39d21">cGueterwagen::zuladen</a></div><div class="ttdeci">double zuladen(double lastplus)</div><div class="ttdoc">Adds the weight of the load to the existing one and returns the new value</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:19</div></div>
-<div class="ttc" id="aclassc_gueterwagen_html_afdfcf012f777a5e40e6f897703f0dd48"><div class="ttname"><a href="classc_gueterwagen.html#afdfcf012f777a5e40e6f897703f0dd48">cGueterwagen::get_gewicht</a></div><div class="ttdeci">double get_gewicht()</div><div class="ttdoc">returns the sum of weight and payload of freight wagon</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:42</div></div>
+<div class="ttc" id="aclassc_gueterwagen_html_a6ee70d8c906a4de3b721a0643a134b68"><div class="ttname"><a href="classc_gueterwagen.html#a6ee70d8c906a4de3b721a0643a134b68">cGueterwagen::ankuppeln</a></div><div class="ttdeci">void ankuppeln() override</div><div class="ttdoc">Output in console &quot;&quot;Gueterwagen: Bremswirkung an Nutzlast anpassen Zieh mich!&quot;&quot;</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:66</div></div>
+<div class="ttc" id="aclassc_gueterwagen_html_aa7a98c2985f5b9540dfa725c5554851a"><div class="ttname"><a href="classc_gueterwagen.html#aa7a98c2985f5b9540dfa725c5554851a">cGueterwagen::cGueterwagen</a></div><div class="ttdeci">cGueterwagen(double nutzlast=0.0, double gewicht=50000.0)</div><div class="ttdoc">standard constructor</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:10</div></div>
+<div class="ttc" id="aclassc_gueterwagen_html_ac947ab9692f7812959e5ff6d42ea3466"><div class="ttname"><a href="classc_gueterwagen.html#ac947ab9692f7812959e5ff6d42ea3466">cGueterwagen::abladen</a></div><div class="ttdeci">double abladen(double lastweg)</div><div class="ttdoc">Subtracts the weight of the load from the available one and returns the new value</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:33</div></div>
+<div class="ttc" id="aclassc_gueterwagen_html_af37d49ad3e826e1b6c4d27f346e39d21"><div class="ttname"><a href="classc_gueterwagen.html#af37d49ad3e826e1b6c4d27f346e39d21">cGueterwagen::zuladen</a></div><div class="ttdeci">double zuladen(double lastplus)</div><div class="ttdoc">Adds the weight of the load to the existing one and returns the new value</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:21</div></div>
+<div class="ttc" id="aclassc_gueterwagen_html_afdfcf012f777a5e40e6f897703f0dd48"><div class="ttname"><a href="classc_gueterwagen.html#afdfcf012f777a5e40e6f897703f0dd48">cGueterwagen::get_gewicht</a></div><div class="ttdeci">double get_gewicht()</div><div class="ttdoc">returns the sum of weight and payload of freight wagon</div><div class="ttdef"><b>Definition:</b> cGueterwagen.cpp:55</div></div>
 <div class="ttc" id="aclassc_waggon_html"><div class="ttname"><a href="classc_waggon.html">cWaggon</a></div><div class="ttdoc">Base class for wagons</div><div class="ttdef"><b>Definition:</b> cWaggon.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

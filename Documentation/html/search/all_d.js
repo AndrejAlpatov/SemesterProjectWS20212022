@@ -6,7 +6,8 @@ var searchData=
   ['scoped_5fptr_3',['scoped_ptr',['../classtesting_1_1internal_1_1scoped__ptr.html',1,'testing::internal']]],
   ['scopedtrace_4',['ScopedTrace',['../classtesting_1_1_scoped_trace.html',1,'testing']]],
   ['setgeopos_5',['setGeoPos',['../classc_geo_pos.html#aec1f7a19eeae8db1e811ab948f078186',1,'cGeoPos']]],
-  ['staticasserttypeeqhelper_6',['StaticAssertTypeEqHelper',['../structtesting_1_1internal_1_1_static_assert_type_eq_helper.html',1,'testing::internal']]],
-  ['staticasserttypeeqhelper_3c_20t_2c_20t_20_3e_7',['StaticAssertTypeEqHelper&lt; T, T &gt;',['../structtesting_1_1internal_1_1_static_assert_type_eq_helper_3_01_t_00_01_t_01_4.html',1,'testing::internal']]],
-  ['string_8',['String',['../classtesting_1_1internal_1_1_string.html',1,'testing::internal']]]
+  ['setup_5fshould_5fbe_5fspelled_5fsetup_6',['Setup_should_be_spelled_SetUp',['../structtesting_1_1_environment_1_1_setup__should__be__spelled___set_up.html',1,'testing::Environment::Setup_should_be_spelled_SetUp'],['../structtesting_1_1_test_1_1_setup__should__be__spelled___set_up.html',1,'testing::Test::Setup_should_be_spelled_SetUp']]],
+  ['staticasserttypeeqhelper_7',['StaticAssertTypeEqHelper',['../structtesting_1_1internal_1_1_static_assert_type_eq_helper.html',1,'testing::internal']]],
+  ['staticasserttypeeqhelper_3c_20t_2c_20t_20_3e_8',['StaticAssertTypeEqHelper&lt; T, T &gt;',['../structtesting_1_1internal_1_1_static_assert_type_eq_helper_3_01_t_00_01_t_01_4.html',1,'testing::internal']]],
+  ['string_9',['String',['../classtesting_1_1internal_1_1_string.html',1,'testing::internal']]]
 ];
