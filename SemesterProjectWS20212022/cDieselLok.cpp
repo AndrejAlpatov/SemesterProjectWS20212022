@@ -11,9 +11,9 @@ double cDieselLok::tanken()
 
 
 /// <summary>
-/// 
+/// Member function "bereitstellen"
 /// </summary>
-/// <param name="stunden"></param>
+/// <param name="stunden">Number of hours</param>
 /// <returns></returns>
 double cDieselLok::bereitstellen(int stunden)
 {
@@ -23,6 +23,12 @@ double cDieselLok::bereitstellen(int stunden)
 	return cLokomotive::bereitstellen(parameter_for_bereitstellen);
 }
 
+/// <summary>
+/// Standard constructor of Diesel locomotive
+/// </summary>
+/// <param name="spritMenge">Fuel amount</param>
+/// <param name="triebkraft">Driving force</param>
+/// <param name="gewicht">Weight</param>
 cDieselLok::cDieselLok(double spritMenge, double triebkraft, double gewicht):cLokomotive(triebkraft, gewicht)
 {
 	this->spritMenge = spritMenge;

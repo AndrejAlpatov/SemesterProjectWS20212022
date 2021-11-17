@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Headerdateien\ZuegeUndWaggons">
+      <UniqueIdentifier>{710a700a-02d5-4d13-8dc4-59e225b64112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\ZuegeUndWaggons">
+      <UniqueIdentifier>{fc718e16-91cd-4064-a61d-110c340f12da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,27 +33,6 @@
     <ClCompile Include="cGeoPos.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="cSchienenFahrzeug.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cLokomotive.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cWaggon.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cDieselLok.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cElektroLok.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cPersonenwagen.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cGueterwagen.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="cBetriebshof.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
@@ -56,6 +41,36 @@
     </ClCompile>
     <ClCompile Include="cEndBahnhof.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cDieselLok.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cElektroLok.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cGueterwagen.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cLokomotive.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cPersonenwagen.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cWaggon.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cSchienenFahrzeug.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cZug.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cGueterzug.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
+    </ClCompile>
+    <ClCompile Include="cPersonenzug.cpp">
+      <Filter>Quelldateien\ZuegeUndWaggons</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -68,27 +83,6 @@
     <ClInclude Include="cGeoPos.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="cSchienenFahrzeug.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cLokomotive.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cWaggon.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cDieselLok.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cElektroLok.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cPersonenwagen.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cGueterwagen.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="cBetriebshof.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -97,6 +91,36 @@
     </ClInclude>
     <ClInclude Include="cEndBahnhof.h">
       <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cDieselLok.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cLokomotive.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cGueterwagen.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cSchienenFahrzeug.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cPersonenwagen.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cWaggon.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cElektroLok.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cZug.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cGueterzug.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cPersonenzug.h">
+      <Filter>Headerdateien\ZuegeUndWaggons</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

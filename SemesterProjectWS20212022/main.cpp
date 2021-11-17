@@ -9,6 +9,8 @@
 #include "cDieselLok.h"
 #include "cElektroLok.h"
 #include "cBetriebshof.h"
+#include "cGueterzug.h"
+#include "cPersonenzug.h"
 
 #define ARRAY_SIZE 2
 #define NUMBER_OF_ELEMENTS_FOR_INPUT 2 //Must be <= ARRAY_SIZE
@@ -50,6 +52,32 @@ int main() {
 	cout << "Gaeste im Personenwagen nach Zusteigen 100: " << pullman.einsteigen(100)
 		<< endl;
 	cout << "Ende" << endl;
+
+	cPersonenwagen waggons_for_passenger_train[] = {  cPersonenwagen(100, 40000.0), cPersonenwagen(200, 50000.0),
+											cPersonenwagen(100, 40000.0), cPersonenwagen(100, 40000.0),
+											cPersonenwagen(100, 40000.0), cPersonenwagen(100, 40000.0),
+											cPersonenwagen(200, 50000.0), cPersonenwagen(200, 50000.0),
+											cPersonenwagen(200, 50000.0), cPersonenwagen(200, 50000.0)};
+							
+	cGueterwagen waggons_for_freight_train[] = { cGueterwagen(10000.0, 60000.0), cGueterwagen(10000.0, 60000.0),
+													cGueterwagen(10000.0, 60000.0), cGueterwagen(10000.0, 60000.0),
+													cGueterwagen(10000.0, 60000.0), cGueterwagen(10000.0, 60000.0),
+													cGueterwagen(10000.0, 60000.0), cGueterwagen(10000.0, 60000.0),
+													cGueterwagen(10000.0, 60000.0), cGueterwagen(10000.0, 60000.0),
+													cGueterwagen(20000.0, 70000.0), cGueterwagen(20000.0, 70000.0),
+													cGueterwagen(20000.0, 70000.0), cGueterwagen(20000.0, 70000.0),
+													cGueterwagen(20000.0, 70000.0), cGueterwagen(20000.0, 70000.0),
+													cGueterwagen(20000.0, 70000.0), cGueterwagen(20000.0, 70000.0),
+													cGueterwagen(20000.0, 70000.0), cGueterwagen(20000.0, 70000.0),
+													cGueterwagen(30000.0, 80000.0), cGueterwagen(30000.0, 80000.0), 
+													cGueterwagen(30000.0, 80000.0), cGueterwagen(30000.0, 80000.0),
+													cGueterwagen(30000.0, 80000.0), cGueterwagen(30000.0, 80000.0),
+													cGueterwagen(30000.0, 80000.0), cGueterwagen(30000.0, 80000.0),
+													cGueterwagen(30000.0, 80000.0), cGueterwagen(30000.0, 80000.0)};
+
+	cPersonenzug passenger_train(waggons_for_passenger_train, 100.0, 10000.0, 60000.0);
+	cGueterzug(waggons_for_freight_train, 20000.0, 20000.0, 87000.0);
+									
 
 	return 0;
 }
