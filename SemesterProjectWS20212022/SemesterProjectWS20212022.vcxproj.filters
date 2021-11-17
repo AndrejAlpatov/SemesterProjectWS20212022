@@ -19,6 +19,12 @@
     <Filter Include="Quelldateien\ZuegeUndWaggons">
       <UniqueIdentifier>{fc718e16-91cd-4064-a61d-110c340f12da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headerdateien\EndPunkte">
+      <UniqueIdentifier>{87887f0c-4d77-4760-b1c3-5bf3b798c6f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\EndPunkte">
+      <UniqueIdentifier>{fe05f58c-e020-4a61-96c6-7f82a7857752}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,19 +33,7 @@
     <ClCompile Include="cStreckenAbschnitt.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="cStreckenEndPunkt.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="cGeoPos.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cBetriebshof.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cBahnhof.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cEndBahnhof.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="cDieselLok.cpp">
@@ -72,24 +66,27 @@
     <ClCompile Include="cPersonenzug.cpp">
       <Filter>Quelldateien\ZuegeUndWaggons</Filter>
     </ClCompile>
+    <ClCompile Include="cZugfahrt.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cBahnhof.cpp">
+      <Filter>Quelldateien\EndPunkte</Filter>
+    </ClCompile>
+    <ClCompile Include="cBetriebshof.cpp">
+      <Filter>Quelldateien\EndPunkte</Filter>
+    </ClCompile>
+    <ClCompile Include="cEndBahnhof.cpp">
+      <Filter>Quelldateien\EndPunkte</Filter>
+    </ClCompile>
+    <ClCompile Include="cStreckenEndPunkt.cpp">
+      <Filter>Quelldateien\EndPunkte</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cStreckenAbschnitt.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="cStreckenEndPunkt.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="cGeoPos.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cBetriebshof.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cBahnhof.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="cEndBahnhof.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="cDieselLok.h">
@@ -121,6 +118,21 @@
     </ClInclude>
     <ClInclude Include="cPersonenzug.h">
       <Filter>Headerdateien\ZuegeUndWaggons</Filter>
+    </ClInclude>
+    <ClInclude Include="cZugfahrt.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cBahnhof.h">
+      <Filter>Headerdateien\EndPunkte</Filter>
+    </ClInclude>
+    <ClInclude Include="cBetriebshof.h">
+      <Filter>Headerdateien\EndPunkte</Filter>
+    </ClInclude>
+    <ClInclude Include="cEndBahnhof.h">
+      <Filter>Headerdateien\EndPunkte</Filter>
+    </ClInclude>
+    <ClInclude Include="cStreckenEndPunkt.h">
+      <Filter>Headerdateien\EndPunkte</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
