@@ -1,6 +1,7 @@
 #include "cStreckenAbschnitt.h"
 #include <iostream>
 #include <string>
+#include <cmath>
 using namespace std;
 
 
@@ -11,11 +12,30 @@ using namespace std;
 /// <param name="nummer_des_streckenabschnitts">The index of route section</param>
 /// <param name="elektrifiziert">The section is electrified True / False </param>
 /// <param name="belegt">The section is occupied True/ False</param>
-cStreckenAbschnitt::cStreckenAbschnitt(int nummer_des_streckenabschnitts, bool elektrifiziert, bool belegt)
+cStreckenAbschnitt::cStreckenAbschnitt(cStreckenEndPunkt end_punkt_1 , cStreckenEndPunkt end_punkt_2, int nummer_des_streckenabschnitts
+				, bool elektrifiziert, bool belegt)
 {
 	this->nummer_des_streckenabschnitts = nummer_des_streckenabschnitts;
 	this->elektrifiziert = elektrifiziert;
 	this->belegt = belegt;
+	end_punkt[0] = end_punkt_1;
+	end_punkt[0] = end_punkt_2;
+
+	berechneLaenge();
+}
+
+
+cStreckenAbschnitt::cStreckenAbschnitt(double endpunkt_1_longitude, double endpunkt_1_latitude, string endpunkt_1_bezeichnung
+	, double endpunkt_2_longitude, double endpunkt_2_latitude, string endpunkt_2_bezeichnung, int nummer_des_streckenabschnitts
+	, bool elektrifiziert, bool belegt)
+{
+	end_punkt[0] = cStreckenEndPunkt(endpunkt_1_bezeichnung, endpunkt_1_longitude, endpunkt_1_latitude);
+	end_punkt[1] = cStreckenEndPunkt(endpunkt_2_bezeichnung, endpunkt_2_longitude, endpunkt_2_latitude);
+	this->nummer_des_streckenabschnitts = nummer_des_streckenabschnitts;
+	this->elektrifiziert = elektrifiziert;
+	this->belegt = belegt;
+
+	berechneLaenge();
 }
 
 
@@ -34,6 +54,9 @@ void cStreckenAbschnitt::ausgabe()
 	cout << "Nummer des Streckenabschnitts: " << nummer_des_streckenabschnitts
 		<< "\nElektrifiziert: " << electrifiziert_string
 		<< "\nBelegt: " << belegt_string << endl;
+
+	end_punkt[0].ausgabe();
+	end_punkt[1].ausgabe();
 }
 
 /// <summary>
@@ -52,4 +75,36 @@ void cStreckenAbschnitt::eingabe()
 	cout << "Ist der Streckenabschnitt belegt (JA - 1, NEIN - 0)?\n";
 	cin >> temp;
 	belegt = temp < 1 ? false : true; //Processing of possibly incorrectly entered values
+
+	end_punkt[0].eingabe();
+	end_punkt[1].eingabe();
+}
+
+
+/// <summary>
+/// Computation of length of route section
+/// </summary>
+/// <returns></returns>
+void cStreckenAbschnitt::berechneLaenge()
+{
+	double distance, dx, dy, lat;
+
+	lat = ((end_punkt[0].getlatitude() + end_punkt[1].getlatitude()) / 2) * 0.01745;
+
+	dx = 111.3 * cos(lat) * (end_punkt[0].getLongitude() - end_punkt[1].getLongitude());
+	dy = 111.3 * (end_punkt[0].getlatitude() - end_punkt[1].getlatitude());
+
+	distance = sqrt(dx * dx + dy * dy);
+
+	Streckenlaenge = distance;
+}
+
+
+/// <summary>
+/// Return the length of route section
+/// </summary>
+/// <returns></returns>
+double cStreckenAbschnitt::getStreckenlaenge()
+{
+	return Streckenlaenge;
 }

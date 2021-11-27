@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SemesterProjectWS20212022: testing::TestResult Class Reference</title>
+<title>My Project: testing::TestResult Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SemesterProjectWS20212022
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classtesting_1_1_test_result-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">testing::TestResult Class Reference</div></div>
@@ -104,6 +107,63 @@ const TestPartResult &amp;&#160;</td><td class="memItemRight" valign="bottom"><b
 const <a class="el" href="classtesting_1_1_test_property.html">TestProperty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTestProperty</b> (int i) const</td></tr>
 <tr class="separator:a6c2f478dbce36b57d18bedded46d70af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a07c4d0171e0a70c4506c09f01e14ba29"><td class="memItemLeft" align="right" valign="top"><a id="a07c4d0171e0a70c4506c09f01e14ba29" name="a07c4d0171e0a70c4506c09f01e14ba29"></a>
+const std::vector&lt; TestPartResult &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>test_part_results</b> () const</td></tr>
+<tr class="separator:a07c4d0171e0a70c4506c09f01e14ba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428565f930a5c88c7f0b1bc6099e6799"><td class="memItemLeft" align="right" valign="top"><a id="a428565f930a5c88c7f0b1bc6099e6799" name="a428565f930a5c88c7f0b1bc6099e6799"></a>
+const std::vector&lt; <a class="el" href="classtesting_1_1_test_property.html">TestProperty</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>test_properties</b> () const</td></tr>
+<tr class="separator:a428565f930a5c88c7f0b1bc6099e6799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa345325e5dea41609d17d7c614bf2b18"><td class="memItemLeft" align="right" valign="top"><a id="aa345325e5dea41609d17d7c614bf2b18" name="aa345325e5dea41609d17d7c614bf2b18"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_elapsed_time</b> (TimeInMillis elapsed)</td></tr>
+<tr class="separator:aa345325e5dea41609d17d7c614bf2b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac253b0fd7ea70f457e9517e415eac32d"><td class="memItemLeft" align="right" valign="top"><a id="ac253b0fd7ea70f457e9517e415eac32d" name="ac253b0fd7ea70f457e9517e415eac32d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordProperty</b> (const std::string &amp;xml_element, const <a class="el" href="classtesting_1_1_test_property.html">TestProperty</a> &amp;test_property)</td></tr>
+<tr class="separator:ac253b0fd7ea70f457e9517e415eac32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28e9821ad3e9314c4fe41b119c5b44d"><td class="memItemLeft" align="right" valign="top"><a id="ac28e9821ad3e9314c4fe41b119c5b44d" name="ac28e9821ad3e9314c4fe41b119c5b44d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTestPartResult</b> (const TestPartResult &amp;test_part_result)</td></tr>
+<tr class="separator:ac28e9821ad3e9314c4fe41b119c5b44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827cb78135ac375d81d89ffedc3eca52"><td class="memItemLeft" align="right" valign="top"><a id="a827cb78135ac375d81d89ffedc3eca52" name="a827cb78135ac375d81d89ffedc3eca52"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>death_test_count</b> () const</td></tr>
+<tr class="separator:a827cb78135ac375d81d89ffedc3eca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07faaa1d16a991f34222d02e10c75dc2"><td class="memItemLeft" align="right" valign="top"><a id="a07faaa1d16a991f34222d02e10c75dc2" name="a07faaa1d16a991f34222d02e10c75dc2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>increment_death_test_count</b> ()</td></tr>
+<tr class="separator:a07faaa1d16a991f34222d02e10c75dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11ed718e0a76a39e6380e5ddce7cae2"><td class="memItemLeft" align="right" valign="top"><a id="aa11ed718e0a76a39e6380e5ddce7cae2" name="aa11ed718e0a76a39e6380e5ddce7cae2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearTestPartResults</b> ()</td></tr>
+<tr class="separator:aa11ed718e0a76a39e6380e5ddce7cae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5371bc2e69435b4cb1fdad9ca81759a6"><td class="memItemLeft" align="right" valign="top"><a id="a5371bc2e69435b4cb1fdad9ca81759a6" name="a5371bc2e69435b4cb1fdad9ca81759a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="separator:a5371bc2e69435b4cb1fdad9ca81759a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad04e1d5d9eb623ba1d9fc82cdff43af4"><td class="memItemLeft" align="right" valign="top"><a id="ad04e1d5d9eb623ba1d9fc82cdff43af4" name="ad04e1d5d9eb623ba1d9fc82cdff43af4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GTEST_DISALLOW_COPY_AND_ASSIGN_</b> (<a class="el" href="classtesting_1_1_test_result.html">TestResult</a>)</td></tr>
+<tr class="separator:ad04e1d5d9eb623ba1d9fc82cdff43af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a01f4ffb668d3b2ffa9b1a11e7045001e"><td class="memItemLeft" align="right" valign="top"><a id="a01f4ffb668d3b2ffa9b1a11e7045001e" name="a01f4ffb668d3b2ffa9b1a11e7045001e"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateTestProperty</b> (const std::string &amp;xml_element, const <a class="el" href="classtesting_1_1_test_property.html">TestProperty</a> &amp;test_property)</td></tr>
+<tr class="separator:a01f4ffb668d3b2ffa9b1a11e7045001e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a58d7d97bd16a04b932e2863153c13dff"><td class="memItemLeft" align="right" valign="top"><a id="a58d7d97bd16a04b932e2863153c13dff" name="a58d7d97bd16a04b932e2863153c13dff"></a>
+<a class="el" href="classtesting_1_1internal_1_1_mutex.html">internal::Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>test_properites_mutex_</b></td></tr>
+<tr class="separator:a58d7d97bd16a04b932e2863153c13dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17c00fae1435d344b318eb6bbb56cff"><td class="memItemLeft" align="right" valign="top"><a id="af17c00fae1435d344b318eb6bbb56cff" name="af17c00fae1435d344b318eb6bbb56cff"></a>
+std::vector&lt; TestPartResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>test_part_results_</b></td></tr>
+<tr class="separator:af17c00fae1435d344b318eb6bbb56cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29cde491988faff4ef2d9f9b6c13d9fa"><td class="memItemLeft" align="right" valign="top"><a id="a29cde491988faff4ef2d9f9b6c13d9fa" name="a29cde491988faff4ef2d9f9b6c13d9fa"></a>
+std::vector&lt; <a class="el" href="classtesting_1_1_test_property.html">TestProperty</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>test_properties_</b></td></tr>
+<tr class="separator:a29cde491988faff4ef2d9f9b6c13d9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3810b34e68f5dca9ad1237a5bde7fa21"><td class="memItemLeft" align="right" valign="top"><a id="a3810b34e68f5dca9ad1237a5bde7fa21" name="a3810b34e68f5dca9ad1237a5bde7fa21"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>death_test_count_</b></td></tr>
+<tr class="separator:a3810b34e68f5dca9ad1237a5bde7fa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739a8ca54db4be004ba748b11e82b056"><td class="memItemLeft" align="right" valign="top"><a id="a739a8ca54db4be004ba748b11e82b056" name="a739a8ca54db4be004ba748b11e82b056"></a>
+TimeInMillis&#160;</td><td class="memItemRight" valign="bottom"><b>elapsed_time_</b></td></tr>
+<tr class="separator:a739a8ca54db4be004ba748b11e82b056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a4c49c2cdb6c328e6b709b4542f23de3c"><td class="memItemLeft" align="right" valign="top"><a id="a4c49c2cdb6c328e6b709b4542f23de3c" name="a4c49c2cdb6c328e6b709b4542f23de3c"></a>
@@ -134,6 +194,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>internal::WindowsDea
 class&#160;</td><td class="memItemRight" valign="bottom"><b>internal::FuchsiaDeathTest</b></td></tr>
 <tr class="separator:af29d5921f68031cdfba0b28cf4b3b559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.4/build/native/include/gtest/<a class="el" href="gtest_8h_source.html">gtest.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

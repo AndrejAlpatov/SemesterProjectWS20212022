@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SemesterProjectWS20212022: testing::UnitTest Class Reference</title>
+<title>My Project: testing::UnitTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SemesterProjectWS20212022
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classtesting_1_1_unit_test-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">testing::UnitTest Class Reference</div></div>
@@ -156,6 +158,45 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
 <tr class="separator:a4606aa9cc89ebb5bfcec550f84eb9cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1eb8e999b8696889bf1c64b4f0161203"><td class="memItemLeft" align="right" valign="top"><a id="a1eb8e999b8696889bf1c64b4f0161203" name="a1eb8e999b8696889bf1c64b4f0161203"></a>
+<a class="el" href="classtesting_1_1_environment.html">Environment</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddEnvironment</b> (<a class="el" href="classtesting_1_1_environment.html">Environment</a> *env)</td></tr>
+<tr class="separator:a1eb8e999b8696889bf1c64b4f0161203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d157d2e9a5c1d3405333410c6b13932"><td class="memItemLeft" align="right" valign="top"><a id="a1d157d2e9a5c1d3405333410c6b13932" name="a1d157d2e9a5c1d3405333410c6b13932"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTestPartResult</b> (TestPartResult::Type result_type, const char *file_name, int line_number, const std::string &amp;message, const std::string &amp;os_stack_trace) GTEST_LOCK_EXCLUDED_(mutex_)</td></tr>
+<tr class="separator:a1d157d2e9a5c1d3405333410c6b13932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c96a4a02c34095e07c6999e7686367f"><td class="memItemLeft" align="right" valign="top"><a id="a2c96a4a02c34095e07c6999e7686367f" name="a2c96a4a02c34095e07c6999e7686367f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordProperty</b> (const std::string &amp;key, const std::string &amp;value)</td></tr>
+<tr class="separator:a2c96a4a02c34095e07c6999e7686367f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad741830280b12c07874b2d37a6ee5c02"><td class="memItemLeft" align="right" valign="top"><a id="ad741830280b12c07874b2d37a6ee5c02" name="ad741830280b12c07874b2d37a6ee5c02"></a>
+<a class="el" href="classtesting_1_1_test_case.html">TestCase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMutableTestCase</b> (int i)</td></tr>
+<tr class="separator:ad741830280b12c07874b2d37a6ee5c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0faaad5908ed6222ce30c46022a17780"><td class="memItemLeft" align="right" valign="top"><a id="a0faaad5908ed6222ce30c46022a17780" name="a0faaad5908ed6222ce30c46022a17780"></a>
+internal::UnitTestImpl *&#160;</td><td class="memItemRight" valign="bottom"><b>impl</b> ()</td></tr>
+<tr class="separator:a0faaad5908ed6222ce30c46022a17780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edab9d31cea35b4360c71059df7afb6"><td class="memItemLeft" align="right" valign="top"><a id="a0edab9d31cea35b4360c71059df7afb6" name="a0edab9d31cea35b4360c71059df7afb6"></a>
+const internal::UnitTestImpl *&#160;</td><td class="memItemRight" valign="bottom"><b>impl</b> () const</td></tr>
+<tr class="separator:a0edab9d31cea35b4360c71059df7afb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af455b953108ff09b3b6e41011653e78a"><td class="memItemLeft" align="right" valign="top"><a id="af455b953108ff09b3b6e41011653e78a" name="af455b953108ff09b3b6e41011653e78a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushGTestTrace</b> (const internal::TraceInfo &amp;trace) GTEST_LOCK_EXCLUDED_(mutex_)</td></tr>
+<tr class="separator:af455b953108ff09b3b6e41011653e78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b3e3282778bc9a36520fe0a8be3c57"><td class="memItemLeft" align="right" valign="top"><a id="a70b3e3282778bc9a36520fe0a8be3c57" name="a70b3e3282778bc9a36520fe0a8be3c57"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PopGTestTrace</b> () GTEST_LOCK_EXCLUDED_(mutex_)</td></tr>
+<tr class="separator:a70b3e3282778bc9a36520fe0a8be3c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e04cfb4f837cea288a98f2a64c43bba"><td class="memItemLeft" align="right" valign="top"><a id="a1e04cfb4f837cea288a98f2a64c43bba" name="a1e04cfb4f837cea288a98f2a64c43bba"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GTEST_DISALLOW_COPY_AND_ASSIGN_</b> (<a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a>)</td></tr>
+<tr class="separator:a1e04cfb4f837cea288a98f2a64c43bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abb94ef45cf0ab43be81ac6d5b1364132"><td class="memItemLeft" align="right" valign="top"><a id="abb94ef45cf0ab43be81ac6d5b1364132" name="abb94ef45cf0ab43be81ac6d5b1364132"></a>
+<a class="el" href="classtesting_1_1internal_1_1_mutex.html">internal::Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mutex_</b></td></tr>
+<tr class="separator:abb94ef45cf0ab43be81ac6d5b1364132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834685f92009d21b21a7307f4cbfb6e5"><td class="memItemLeft" align="right" valign="top"><a id="a834685f92009d21b21a7307f4cbfb6e5" name="a834685f92009d21b21a7307f4cbfb6e5"></a>
+internal::UnitTestImpl *&#160;</td><td class="memItemRight" valign="bottom"><b>impl_</b></td></tr>
+<tr class="separator:a834685f92009d21b21a7307f4cbfb6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ada54bdd5bdc24f39b9ca16807326654a"><td class="memItemLeft" align="right" valign="top"><a id="ada54bdd5bdc24f39b9ca16807326654a" name="ada54bdd5bdc24f39b9ca16807326654a"></a>
@@ -183,6 +224,9 @@ internal::UnitTestImpl *&#160;</td><td class="memItemRight" valign="bottom"><b>i
 void&#160;</td><td class="memItemRight" valign="bottom"><b>internal::ReportFailureInUnknownLocation</b> (TestPartResult::Type result_type, const std::string &amp;message)</td></tr>
 <tr class="separator:a73f5a158c13793b90c80d854c9a75120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.4/build/native/include/gtest/<a class="el" href="gtest_8h_source.html">gtest.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

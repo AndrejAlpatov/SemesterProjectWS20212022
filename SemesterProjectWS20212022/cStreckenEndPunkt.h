@@ -16,5 +16,7 @@ public:
 	cStreckenEndPunkt(string bezeichnung = "Haltepunkt", double laenge = 0.0, double breite = 0.0);
 	void ausgabe();
 	void eingabe();
+	double getLongitude() { return coordinates.getLongitude(); };
+	double getlatitude() { return coordinates.getLatitude(); };
 };
 

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SemesterProjectWS20212022: cGeoPos Class Reference</title>
+<title>My Project: cGeoPos Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SemesterProjectWS20212022
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classc_geo_pos-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">cGeoPos Class Reference</div></div>
 </div><!--header-->
@@ -92,6 +94,21 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getLongitude</b> ()
 <tr class="memitem:a51498f98fbd8b5e3e61cb47face390c5"><td class="memItemLeft" align="right" valign="top"><a id="a51498f98fbd8b5e3e61cb47face390c5" name="a51498f98fbd8b5e3e61cb47face390c5"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getLatitude</b> ()</td></tr>
 <tr class="separator:a51498f98fbd8b5e3e61cb47face390c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a065ed25c76c9bcec099c321b99ea1401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_geo_pos.html#a065ed25c76c9bcec099c321b99ea1401">corrGeoCoordinates</a> ()</td></tr>
+<tr class="memdesc:a065ed25c76c9bcec099c321b99ea1401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correction of the geographic coordinates  <a href="classc_geo_pos.html#a065ed25c76c9bcec099c321b99ea1401">More...</a><br /></td></tr>
+<tr class="separator:a065ed25c76c9bcec099c321b99ea1401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2dc58c7cb01ba7702e6577b4ec64cd91"><td class="memItemLeft" align="right" valign="top"><a id="a2dc58c7cb01ba7702e6577b4ec64cd91" name="a2dc58c7cb01ba7702e6577b4ec64cd91"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>longitude</b></td></tr>
+<tr class="separator:a2dc58c7cb01ba7702e6577b4ec64cd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f7002f6f657eb67d03b2c7ae19dab8"><td class="memItemLeft" align="right" valign="top"><a id="a38f7002f6f657eb67d03b2c7ae19dab8" name="a38f7002f6f657eb67d03b2c7ae19dab8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>latitude</b></td></tr>
+<tr class="separator:a38f7002f6f657eb67d03b2c7ae19dab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Manages geographical coordinates longitude and latitude </p>
@@ -134,6 +151,34 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getLatitude</b> ()<
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a065ed25c76c9bcec099c321b99ea1401" name="a065ed25c76c9bcec099c321b99ea1401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a065ed25c76c9bcec099c321b99ea1401">&#9670;&nbsp;</a></span>corrGeoCoordinates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cGeoPos::corrGeoCoordinates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Correction of the geographic coordinates </p>
+<p >Should be: -180&lt;=longitude&lt;=180 -90&lt;=latitude&lt;=90 </p>
+
+</div>
+</div>
 <a id="aec1f7a19eeae8db1e811ab948f078186" name="aec1f7a19eeae8db1e811ab948f078186"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec1f7a19eeae8db1e811ab948f078186">&#9670;&nbsp;</a></span>setGeoPos()</h2>
 
@@ -174,6 +219,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getLatitude</b> ()<
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/SemesterProjectWS20212022/<a class="el" href="c_geo_pos_8h_source.html">cGeoPos.h</a></li>
+<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/SemesterProjectWS20212022/cGeoPos.cpp</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -139,15 +139,41 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cBahnhof.cpp" />
+    <ClCompile Include="cBetriebshof.cpp" />
+    <ClCompile Include="cDieselLok.cpp" />
+    <ClCompile Include="cElektroLok.cpp" />
+    <ClCompile Include="cEndBahnhof.cpp" />
     <ClCompile Include="cGeoPos.cpp" />
+    <ClCompile Include="cGueterwagen.cpp" />
+    <ClCompile Include="cGueterzug.cpp" />
+    <ClCompile Include="cLokomotive.cpp" />
+    <ClCompile Include="cPersonenwagen.cpp" />
+    <ClCompile Include="cPersonenzug.cpp" />
+    <ClCompile Include="cSchienenFahrzeug.cpp" />
     <ClCompile Include="cStreckenAbschnitt.cpp" />
     <ClCompile Include="cStreckenEndPunkt.cpp" />
+    <ClCompile Include="cWaggon.cpp" />
+    <ClCompile Include="cZug.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cBahnhof.h" />
+    <ClInclude Include="cBetriebshof.h" />
+    <ClInclude Include="cDieselLok.h" />
+    <ClInclude Include="cElektroLok.h" />
+    <ClInclude Include="cEndBahnhof.h" />
     <ClInclude Include="cGeoPos.h" />
+    <ClInclude Include="cGueterwagen.h" />
+    <ClInclude Include="cGueterzug.h" />
+    <ClInclude Include="cLokomotive.h" />
+    <ClInclude Include="cPersonenwagen.h" />
+    <ClInclude Include="cPersonenzug.h" />
+    <ClInclude Include="cSchienenFahrzeug.h" />
     <ClInclude Include="cStreckenAbschnitt.h" />
     <ClInclude Include="cStreckenEndPunkt.h" />
+    <ClInclude Include="cWaggon.h" />
+    <ClInclude Include="cZug.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

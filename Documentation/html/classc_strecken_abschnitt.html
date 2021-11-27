@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SemesterProjectWS20212022: cStreckenAbschnitt Class Reference</title>
+<title>My Project: cStreckenAbschnitt Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SemesterProjectWS20212022
+   <div id="projectname">My Project<span id="projectnumber">&#160;4</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classc_strecken_abschnitt-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">cStreckenAbschnitt Class Reference</div></div>
 </div><!--header-->
@@ -76,9 +77,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa40ada14b1d78e858888b12eee826c01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_strecken_abschnitt.html#aa40ada14b1d78e858888b12eee826c01">cStreckenAbschnitt</a> (int nummer_des_streckenabschnitts=0, bool elektrifiziert=true, bool belegt=false)</td></tr>
-<tr class="memdesc:aa40ada14b1d78e858888b12eee826c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Universal constructor  <a href="classc_strecken_abschnitt.html#aa40ada14b1d78e858888b12eee826c01">More...</a><br /></td></tr>
-<tr class="separator:aa40ada14b1d78e858888b12eee826c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacdba0deca9c12de857c2a02813440b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_strecken_abschnitt.html#aacdba0deca9c12de857c2a02813440b9">cStreckenAbschnitt</a> (<a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a> end_punkt_1=<a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a>(), <a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a> end_punkt_2=<a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a>(), int nummer_des_streckenabschnitts=0, bool elektrifiziert=true, bool belegt=false)</td></tr>
+<tr class="memdesc:aacdba0deca9c12de857c2a02813440b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Universal constructor  <a href="classc_strecken_abschnitt.html#aacdba0deca9c12de857c2a02813440b9">More...</a><br /></td></tr>
+<tr class="separator:aacdba0deca9c12de857c2a02813440b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b29f69df337a63c6bd0b4245baab19"><td class="memItemLeft" align="right" valign="top"><a id="aa9b29f69df337a63c6bd0b4245baab19" name="aa9b29f69df337a63c6bd0b4245baab19"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>cStreckenAbschnitt</b> (double endpunkt_1_longitude, double endpunkt_1_latitude, string endpunkt_1_bezeichnung, double endpunkt_2_longitude, double endpunkt_2_latitude, string endpunkt_2_bezeichnung, int nummer_des_streckenabschnitts=0, bool elektrifiziert=true, bool belegt=false)</td></tr>
+<tr class="separator:aa9b29f69df337a63c6bd0b4245baab19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b8f8ff27f14249ae0450fdeeab5183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_strecken_abschnitt.html#ab1b8f8ff27f14249ae0450fdeeab5183">ausgabe</a> ()</td></tr>
 <tr class="memdesc:ab1b8f8ff27f14249ae0450fdeeab5183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output of the route section values  <a href="classc_strecken_abschnitt.html#ab1b8f8ff27f14249ae0450fdeeab5183">More...</a><br /></td></tr>
 <tr class="separator:ab1b8f8ff27f14249ae0450fdeeab5183"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,12 +90,36 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>eingabe</b> ()</td></tr>
 <tr class="memdesc:af8eab6648ce791cfb4fb695d1a96dac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input Values for class members <br /></td></tr>
 <tr class="separator:af8eab6648ce791cfb4fb695d1a96dac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6131749baaece458b66c0a31e1601c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_strecken_abschnitt.html#aa6131749baaece458b66c0a31e1601c9">berechneLaenge</a> ()</td></tr>
+<tr class="memdesc:aa6131749baaece458b66c0a31e1601c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computation of length of route section  <a href="classc_strecken_abschnitt.html#aa6131749baaece458b66c0a31e1601c9">More...</a><br /></td></tr>
+<tr class="separator:aa6131749baaece458b66c0a31e1601c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6ffe51e7d8523ea38e10bd59f2b251"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_strecken_abschnitt.html#a9c6ffe51e7d8523ea38e10bd59f2b251">getStreckenlaenge</a> ()</td></tr>
+<tr class="memdesc:a9c6ffe51e7d8523ea38e10bd59f2b251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the length of route section  <a href="classc_strecken_abschnitt.html#a9c6ffe51e7d8523ea38e10bd59f2b251">More...</a><br /></td></tr>
+<tr class="separator:a9c6ffe51e7d8523ea38e10bd59f2b251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a63e505e0a2a3c71ec508cd550b7cf5f6"><td class="memItemLeft" align="right" valign="top"><a id="a63e505e0a2a3c71ec508cd550b7cf5f6" name="a63e505e0a2a3c71ec508cd550b7cf5f6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>nummer_des_streckenabschnitts</b></td></tr>
+<tr class="separator:a63e505e0a2a3c71ec508cd550b7cf5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f454c15e3bdb134a65fe7d1745ffbc"><td class="memItemLeft" align="right" valign="top"><a id="a73f454c15e3bdb134a65fe7d1745ffbc" name="a73f454c15e3bdb134a65fe7d1745ffbc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>elektrifiziert</b></td></tr>
+<tr class="separator:a73f454c15e3bdb134a65fe7d1745ffbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8b9c99e8a85627fe27dd09579e79a5"><td class="memItemLeft" align="right" valign="top"><a id="a4b8b9c99e8a85627fe27dd09579e79a5" name="a4b8b9c99e8a85627fe27dd09579e79a5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>belegt</b></td></tr>
+<tr class="separator:a4b8b9c99e8a85627fe27dd09579e79a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115b12f7a18e04075d4f6a93977f5cb9"><td class="memItemLeft" align="right" valign="top"><a id="a115b12f7a18e04075d4f6a93977f5cb9" name="a115b12f7a18e04075d4f6a93977f5cb9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>Streckenlaenge</b></td></tr>
+<tr class="separator:a115b12f7a18e04075d4f6a93977f5cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab026edbffc337d5c7072aedd2a3463b0"><td class="memItemLeft" align="right" valign="top"><a id="ab026edbffc337d5c7072aedd2a3463b0" name="ab026edbffc337d5c7072aedd2a3463b0"></a>
+<a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end_punkt</b> [2]</td></tr>
+<tr class="separator:ab026edbffc337d5c7072aedd2a3463b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class <a class="el" href="classc_strecken_abschnitt.html" title="Class cStreckenAbschnitt is for managing route sections">cStreckenAbschnitt</a> is for managing route sections </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa40ada14b1d78e858888b12eee826c01" name="aa40ada14b1d78e858888b12eee826c01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa40ada14b1d78e858888b12eee826c01">&#9670;&nbsp;</a></span>cStreckenAbschnitt()</h2>
+<a id="aacdba0deca9c12de857c2a02813440b9" name="aacdba0deca9c12de857c2a02813440b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacdba0deca9c12de857c2a02813440b9">&#9670;&nbsp;</a></span>cStreckenAbschnitt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,6 +127,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>eingabe</b> ()</td></
         <tr>
           <td class="memname">cStreckenAbschnitt::cStreckenAbschnitt </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a>&#160;</td>
+          <td class="paramname"><em>end_punkt_1</em> = <code><a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a>&#160;</td>
+          <td class="paramname"><em>end_punkt_2</em> = <code><a class="el" href="classc_strecken_end_punkt.html">cStreckenEndPunkt</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nummer_des_streckenabschnitts</em> = <code>0</code>, </td>
         </tr>
@@ -155,6 +195,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>eingabe</b> ()</td></
 
 </div>
 </div>
+<a id="aa6131749baaece458b66c0a31e1601c9" name="aa6131749baaece458b66c0a31e1601c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6131749baaece458b66c0a31e1601c9">&#9670;&nbsp;</a></span>berechneLaenge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cStreckenAbschnitt::berechneLaenge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computation of length of route section </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a9c6ffe51e7d8523ea38e10bd59f2b251" name="a9c6ffe51e7d8523ea38e10bd59f2b251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c6ffe51e7d8523ea38e10bd59f2b251">&#9670;&nbsp;</a></span>getStreckenlaenge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double cStreckenAbschnitt::getStreckenlaenge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the length of route section </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/SemesterProjectWS20212022/<a class="el" href="c_strecken_abschnitt_8h_source.html">cStreckenAbschnitt.h</a></li>
+<li>C:/Studium/Arbeit/Semesterprojekt/SemesterProjectWS20212022/SemesterProjectWS20212022/cStreckenAbschnitt.cpp</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
