@@ -4,11 +4,16 @@
 
 class cZugfahrt
 {
-	cStreckenEndPunkt *sTartBahnhof;
-	cStreckenEndPunkt *zielBahnhof;
-	cZug* zug;
+	cStreckenEndPunkt	startBahnhof,
+						zielBahnhof;
+	cZug *zug;
 
 public:
-	cZugfahrt()
+	cZugfahrt(cZug * array_of_trains);
+	//TODO: create an array of endPunkte for Start- and Zielbahnhof in main
+	//TODO: pass train array in constructor of class cZugfahrt
+	//TODO: Propose user to choose the train number for a trip, search in array and allocation to zugfahrt in main
+	//TODO: Propose user to choose the Start and finish points for a trip, search in array and allocation to zugfahrt in main
+	//TODO: overload copy constructor and = operators
 };
 

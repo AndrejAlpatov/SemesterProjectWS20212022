@@ -12,10 +12,9 @@ namespace personenzug {
 class cPersonenzug :
     public cZug
 {
-    cDieselLok locomotive;
     cPersonenwagen waggons[personenzug::NUMBER_OF_WAGONS];
 
 public:
-   cPersonenzug(cPersonenwagen * waggons, double spritMenge = 0, double triebkraft = 6500.0, double gewicht = 50000);
+   cPersonenzug(cPersonenwagen * waggons, double spritMenge = 0, double triebkraft = 6500.0, double gewicht = 50000, string zug_numer = "1");
 };
 

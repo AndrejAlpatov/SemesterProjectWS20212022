@@ -75,12 +75,11 @@ int main() {
 													cGueterwagen(30000.0, 80000.0), cGueterwagen(30000.0, 80000.0),
 													cGueterwagen(30000.0, 80000.0), cGueterwagen(30000.0, 80000.0)};
 
-	cPersonenzug passenger_train(waggons_for_passenger_train, 100.0, 10000.0, 60000.0);
-	cGueterzug freight_train(waggons_for_freight_train, 20000.0, 20000.0, 87000.0);
-									
-	cZug a;
-	a.setZugNummer("A-105*");
-	a.getZugNummer();
+	cZug* array_of_trains[] = {
+		new cPersonenzug (waggons_for_passenger_train, 100.0, 10000.0, 60000.0, "rb31"),
+		new cGueterzug(waggons_for_freight_train, 20000.0, 20000.0, 87000.0, "rb35")
+	};
+	
 
 
 	return 0;

@@ -5,12 +5,12 @@
 /// </summary>
 /// <param name="strint_to_correction">string to be without non-alphanumeric characters</param>
 /// <returns>String consists only of alphanumeric characters</returns>
-string cZug::correction_of_train_number(string strint_to_correction)
+string cZug::correction_of_train_number(string string_for_correction)
 {
-	strint_to_correction.erase(std::remove_if(strint_to_correction.begin(), strint_to_correction.end(),
-		[](auto const& c) -> bool { return !std::isalnum(c); }), strint_to_correction.end());
+	string_for_correction.erase(std::remove_if(string_for_correction.begin(), string_for_correction.end(),
+		[](auto const& c) -> bool { return !std::isalnum(c); }), string_for_correction.end());
 
-	return strint_to_correction;
+	return string_for_correction;
 }
 
 
