@@ -156,6 +156,7 @@
     <ClCompile Include="cWaggon.cpp" />
     <ClCompile Include="cZug.cpp" />
     <ClCompile Include="cZugfahrt.cpp" />
+    <ClCompile Include="global.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +177,11 @@
     <ClInclude Include="cWaggon.h" />
     <ClInclude Include="cZug.h" />
     <ClInclude Include="cZugfahrt.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SemesterProjectWS20212022.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

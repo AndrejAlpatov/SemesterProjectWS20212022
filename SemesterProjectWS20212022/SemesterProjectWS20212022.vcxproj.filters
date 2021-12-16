@@ -81,6 +81,9 @@
     <ClCompile Include="cStreckenEndPunkt.cpp">
       <Filter>Quelldateien\EndPunkte</Filter>
     </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cStreckenAbschnitt.h">
@@ -134,5 +137,16 @@
     <ClInclude Include="cStreckenEndPunkt.h">
       <Filter>Headerdateien\EndPunkte</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SemesterProjectWS20212022.rc">
+      <Filter>Ressourcendateien</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
