@@ -7,6 +7,6 @@ class cBahnhof :
     int min_stop_duration;
 
 public:
-    cBahnhof(string bezeichnung = "Bahnhof", int number_of_tracks = 2, int min_stop_duration = 120);
+    cBahnhof(string bezeichnung = "Bahnhof", double laenge = 0.0, double breite = 0.0, int number_of_tracks = 2, int min_stop_duration = 120);
 };
 

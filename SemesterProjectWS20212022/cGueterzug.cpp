@@ -7,7 +7,8 @@
 /// <param name="spritMenge">Fuel amount</param>
 /// <param name="triebkraft">Driving force</param>
 /// <param name="gewicht">Weight</param>
-cGueterzug::cGueterzug(cGueterwagen *waggons, double spritMenge, double triebkraft, double gewicht):locomotive(spritMenge, triebkraft, gewicht)
+cGueterzug::cGueterzug(cGueterwagen *waggons, double spritMenge, double triebkraft, double gewicht, string zug_numer): 
+																								cZug(spritMenge, triebkraft, gewicht, zug_numer)
 {
 	for (int i=0; i < gueterzug::NUMBER_OF_WAGONS; i++)
 	{
