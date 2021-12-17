@@ -12,9 +12,11 @@
 #include "cGueterzug.h"
 #include "cPersonenzug.h"
 #include "global.h"
+#include "cZugfahrt.h"
 
-#define ARRAY_SIZE 2
-#define NUMBER_OF_ELEMENTS_FOR_INPUT 2 //Must be <= ARRAY_SIZE
+//#define ARRAY_SIZE 2
+//#define NUMBER_OF_ELEMENTS_FOR_INPUT 2 //Must be <= ARRAY_SIZE
+
 
 int main() {
 
@@ -56,13 +58,18 @@ int main() {
 
 
 	cZug* array_of_trains[] = {
-		new cPersonenzug (waggons_for_passenger_train, 100.0, 10000.0, 60000.0, "rb31"),
-		new cGueterzug(waggons_for_freight_train, 20000.0, 20000.0, 87000.0, "rb35")
+		new cPersonenzug (waggons_for_passenger_train, 100.0, 10000.0, 60000.0, "ICE699"),
+		new cGueterzug(waggons_for_freight_train, 20000.0, 20000.0, 87000.0, "GZ001")
 	};
 
+	cZugfahrt first_trip(array_of_trains, railway_stations);
 
 	
-
+	//free up memory
+	for (int i = 0; i < NUMBER_OF_TRAINS; i++)
+	{
+		delete array_of_trains[i];
+	}
 
 	return 0;
 }

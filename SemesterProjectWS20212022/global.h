@@ -5,8 +5,9 @@
 
 #include "cPersonenwagen.h"
 #include "cGueterwagen.h"
-#include "cPersonenzug.h"
-#include "cGueterzug.h"
+#include "cEndBahnhof.h"
+#include "cBahnhof.h"
+#include "cBetriebshof.h"
 
 
 // This is a declaration of variables, which tells the linker this value
@@ -15,6 +16,8 @@
 
 extern cPersonenwagen waggons_for_passenger_train[];
 extern cGueterwagen waggons_for_freight_train[];
+extern cStreckenEndPunkt railway_stations[];
+extern const int NUMBER_OF_TRAINS;
 
 
 #endif
